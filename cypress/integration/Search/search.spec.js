@@ -6,6 +6,7 @@ Given("I visit {string}", (url)=>{
     cy.visit(url);
 })
 When("I add origin as {string}", (origin)=>{
+    console.log(origin);
     homePage.searchOriginInput(origin);
     
 })

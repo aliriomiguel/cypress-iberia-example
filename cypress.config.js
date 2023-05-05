@@ -9,6 +9,8 @@ module.exports = defineConfig({
     specPattern: 'cypress/integration/**/*.feature',
     supportFile: 'cypress/support/index.js'
   },
+  viewportWidth: 1920,
+  viewportHeight: 1080,
   video: true,
   videosFolder: "videos" 
 });

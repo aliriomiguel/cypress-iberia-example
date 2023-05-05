@@ -7,18 +7,18 @@ class homePage{
         searchButton : () =>cy.get("#buttonSubmit1 > span.ibe-button__text")
     }
 
-    searchOriginInput(){
+    searchOriginInput(string){
         this.elements.originInput().type(string);
     }    
-    searchDestinationInput(){
+    searchDestinationInput(string){
         this.elements.destinationInput().type(string);
     }
     
-    searchDateDeparture(){
+    searchDateDeparture(string){
         this.elements.dateDeparture().type(string);
     }
     
-    searchDateBack(){
+    searchDateBack(string){
         this.elements.dateBack().type(string);
     }
     

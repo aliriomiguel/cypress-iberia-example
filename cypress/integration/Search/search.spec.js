@@ -1,4 +1,3 @@
-//import homePage from "../../../pages/homePage";
 const homePage = require('../../pages/homePage.js');
 
 

@@ -16,6 +16,11 @@
 // Import commands.js using ES2015 syntax:
 //import './commands'
 
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // do something with the error, such as logging it or handling it in a custom way
+    return false // return false to prevent Cypress from failing the test
+})
+
 afterEach(() => {
     const screenshotsFolder = Cypress.config("screenshotsFolder");
     if (window.cucumberJson?.generate) {

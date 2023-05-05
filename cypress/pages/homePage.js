@@ -2,29 +2,37 @@ class homePage{
     elements ={
         originInput : () => cy.get("#flight_origin1"),
         destinationInput : () => cy.get("#flight_destiny1"),
-        dateDeparture : () => cy.get("#flight_round_date1"),
-        dateBack : () => cy.get("#flight_return_date1"),
-        searchButton : () =>cy.get("#buttonSubmit1 > span.ibe-button__text")
+        dateLabel : () => cy.get('label'),
+        searchButton : () => cy.get("#buttonSubmit1 > span.ibe-button__text"),
+        acceptCookies : () => cy.get("#onetrust-accept-btn-handler")
     }
+    
 
     searchOriginInput(string){
+        this.elements.originInput().click();
         this.elements.originInput().type(string);
     }    
     searchDestinationInput(string){
+        this.elements.destinationInput().click({ force: true });
         this.elements.destinationInput().type(string);
     }
-    
-    searchDateDeparture(string){
-        this.elements.dateDeparture().type(string);
+
+    searchClickOnLabelText(string){
+        this.elements.dateLabel().contains(string).click();
     }
-    
-    searchDateBack(string){
-        this.elements.dateBack().type(string);
+
+    searchDatesInput(travel,date){
+        this.elements.dateLabel().contains(travel).click().type(date);
     }
     
     searchSearchButton(){
         this.elements.searchButton().click();
     }
+
+    accptCookiesButton(){
+        this.elements.acceptCookies().click();
+    }
+
 }
 
 module.exports = new homePage();

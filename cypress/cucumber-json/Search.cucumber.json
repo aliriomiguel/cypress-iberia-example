@@ -22,59 +22,67 @@
             "name": "I visit \"https://www.iberia.com/\"",
             "result": {
               "status": "passed",
-              "duration": 4154000000
+              "duration": 11767000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I accept the cookies",
+            "result": {
+              "status": "passed",
+              "duration": 3676000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 5,
-            "name": "I add origin as \"Madrid\"",
-            "result": {
-              "status": "failed",
-              "duration": 4212000000,
-              "error_message": "CypressError: Timed out retrying after 4000ms: `cy.type()` failed because this element:\n\n`<input name=\"flight_origin\" data-search-place=\"V-O\" id=\"flight_origin1\" type=\"text\" data-analytics=\"vuelo_origen\" placeholder=\"Departure\" alt-placeholder=\"Departure\" data-autocomplete=\"cities\" spellcheck=\"false\" data-destination-info=\"\" data-validate=\"input-origin\" data-fligths-collapse-mobile=\"button\" class=\"ibe_form__input-text ui-autocomplete-input inte-cities-loaded\" data-autocomplete-no-results=\"Oops. We can't find the origin {{inputValue}} for your selected destination.\" autocomplete=\"off\">`\n\nis being covered by another element:\n\n`<div class=\"onetrust-pc-dark-filter ot-fade-in\" style=\"z-index:2147483645;\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n    at ensureIsDescendent (https://www.iberia.com/__cypress/runner/cypress_runner.js:142253:76)\n    at ensureDescendents (https://www.iberia.com/__cypress/runner/cypress_runner.js:142304:5)\n    at ensureDescendentsAndScroll (https://www.iberia.com/__cypress/runner/cypress_runner.js:142310:14)\n    at ensureElIsNotCovered (https://www.iberia.com/__cypress/runner/cypress_runner.js:142441:5)\n    at runAllChecks (https://www.iberia.com/__cypress/runner/cypress_runner.js:142621:52)\n    at retryActionability (https://www.iberia.com/__cypress/runner/cypress_runner.js:142658:16)\nFrom previous event:\n    at whenStable (https://www.iberia.com/__cypress/runner/cypress_runner.js:158771:65)\n    at <unknown> (https://www.iberia.com/__cypress/runner/cypress_runner.js:158212:14)\nFrom Your Spec Code:\n    at homePage.searchOriginInput (cypress/pages/homePage.js:11:36)\n    at Context.eval (cypress/integration/Search/search.spec.js:10:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            },
-            "embeddings": [
-              {
-                "mime_type": "image/png"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 6,
-            "name": "I add destination as \"Bilbao\"",
+            "name": "I add origin as \"Madrid{enter}\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4203000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "I add departure date as \"25102023\"",
+            "name": "I add destination as \"Bilbao{enter}\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1498000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "I add return date as \"01012024\"",
+            "name": "I add \"Departure date\" as \"10052023\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4000000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I add \"Return date\" as \"01012024\"",
+            "result": {
+              "status": "passed",
+              "duration": 2319000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
+            "line": 10,
             "name": "I click Search button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4900000000
             }
           }
         ]

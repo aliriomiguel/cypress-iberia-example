@@ -22,7 +22,7 @@
             "name": "I visit \"https://www.iberia.com/\"",
             "result": {
               "status": "passed",
-              "duration": 4673000000
+              "duration": 9662000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I accept the cookies",
             "result": {
               "status": "passed",
-              "duration": 1935000000
+              "duration": 3956000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I add origin as \"Madrid{enter}\"",
             "result": {
               "status": "passed",
-              "duration": 2086000000
+              "duration": 4294000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I add destination as \"Bilbao{enter}\"",
             "result": {
               "status": "passed",
-              "duration": 718000000
+              "duration": 1565000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I add \"Departure date\" as \"10052023\"",
             "result": {
               "status": "passed",
-              "duration": 1398000000
+              "duration": 10493000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "I add \"Return date\" as \"01012024\"",
             "result": {
               "status": "passed",
-              "duration": 1331000000
+              "duration": 8922000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "I click Search button",
             "result": {
               "status": "passed",
-              "duration": 5126000000
+              "duration": 28602000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "I see the loading screen",
             "result": {
               "status": "passed",
-              "duration": 2451000000
+              "duration": 3180000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "I select departure flight",
             "result": {
               "status": "passed",
-              "duration": 17742000000
+              "duration": 31950000000
             }
           },
           {
@@ -112,8 +112,8 @@
             "name": "I select return flight",
             "result": {
               "status": "failed",
-              "duration": 4092000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `span[id=\"bbki-ib-box-mini-fare-1-0-E.ib-box-mini-fare__box-content\"]`, but never found it.\n    at Object.firstEconomyReturnButton (cypress/pages/flightListPage.js:8:43)\n    at flightListPage.selectFirstEconomyReturnButton (cypress/pages/flightListPage.js:23:22)\n    at Context.eval (cypress/integration/Search/search.spec.js:36:19)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "duration": 404000000,
+              "error_message": "TypeError: cy.xpath is not a function\n    at Object.firstEconomyReturnButton (cypress/pages/flightListPage.js:8:43)\n    at flightListPage.selectFirstEconomyReturnButton (cypress/pages/flightListPage.js:23:22)\n    at Context.eval (cypress/integration/Search/search.spec.js:36:19)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Context.thenFn (https://www.iberia.com/__cypress/runner/cypress_runner.js:147733:63)\n    at Context.then (https://www.iberia.com/__cypress/runner/cypress_runner.js:147982:21)\n    at wrapped (https://www.iberia.com/__cypress/runner/cypress_runner.js:163215:19)\n    at <unknown> (https://www.iberia.com/__cypress/runner/cypress_runner.js:162041:15)\nFrom previous event:\n    at CommandQueue.runCommand (https://www.iberia.com/__cypress/runner/cypress_runner.js:162007:8)\n    at next (https://www.iberia.com/__cypress/runner/cypress_runner.js:162207:19)\nFrom previous event:\n    at next (https://www.iberia.com/__cypress/runner/cypress_runner.js:162207:39)\n    at <unknown> (https://www.iberia.com/__cypress/runner/cypress_runner.js:162228:16)"
             },
             "embeddings": [
               {

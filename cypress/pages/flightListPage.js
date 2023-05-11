@@ -5,7 +5,7 @@ class flightListPage{
         firstEconomyDepartureButton: () => cy.get('#bbki-ib-box-mini-fare-0-0-E'),
         cabinsDepartureTable:() => cy.get('#selectedSlice-E-1-0-selected > div', {timeout : 40000}),
         returnTitle: () => cy.get('#bbki-availavility-availability-trip-1 > div > div.ib-content-heading.ib-content-heading--type-1.u-mt-small.u-mb-small > h1', { timeout: 50000 }),
-        firstEconomyReturnButton: () => cy.get('span[id="bbki-ib-box-mini-fare-1-0-E.ib-box-mini-fare__box-content"]'),
+        firstEconomyReturnButton: () => cy.xpath('//*[@id="bbki-slice-info-cabin-1-0-E-btn"]'),
         cabinsReturnTable: () => cy.get('#selectedSlice-E-2-1-selected > div', {timeout:40000}),
         continueButton: () => cy.get('#AVAILABILITY_CONTINUE_BUTTON')
     }

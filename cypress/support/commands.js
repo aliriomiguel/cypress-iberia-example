@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('waitUntilAngularStable', () => {
+    const getAngular = () => cy.window().its('angular', {log: false});
+    getAngular().then((angular) => {
+        return new Cypress.Promise(resolve => {
+            angular.getTestability('body').whenStable(() => {
+                resolve();
+            });
+        });
+    });
+});

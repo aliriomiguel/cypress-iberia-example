@@ -17,6 +17,8 @@
 //import './commands'
 // Hide fetch/XHR requests
 import './commands.js'
+import '@cypress/xpath'
+
 const app = window.top;
 if (!app.document.head.querySelector('[data-hide-command-log-request]')) {
   const style = app.document.createElement('style');

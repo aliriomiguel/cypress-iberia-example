@@ -1,4 +1,4 @@
-class homePage{
+class HomePage{
     
     elements ={
         originInput : () => cy.get("#flight_origin1"),
@@ -27,4 +27,4 @@ class homePage{
     }
 }
 
-module.exports = new homePage();
+module.exports = new HomePage();

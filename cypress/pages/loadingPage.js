@@ -1,4 +1,4 @@
-class loadingPage{
+class LoadingPage{
 
     elements={
         loadingCircle: () => cy.get('#bbki-loading-plane')
@@ -10,4 +10,4 @@ class loadingPage{
 
 }
 
-module.exports = new loadingPage();
+module.exports = new LoadingPage();

@@ -1,4 +1,4 @@
-class flightListPage{
+class FlightListPage{
 
     elements = {
         departureTitle: () => cy.get('#bbki-availavility-availability-trip-0 > div > div.ib-content-heading.ib-content-heading--type-1.u-mt-small.u-mb-small > h1', { timeout: 50000 }),
@@ -34,4 +34,4 @@ class flightListPage{
 
 }
 
-module.exports = new flightListPage();
+module.exports = new FlightListPage();

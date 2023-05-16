@@ -1,6 +1,6 @@
 class HomePage{
     
-    elements ={
+    elements = {
         originInput : () => cy.get("#flight_origin1"),
         destinationInput : () => cy.get("#flight_destiny1"),
         dateLabel : () => cy.get('label'),

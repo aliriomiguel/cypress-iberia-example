@@ -1,16 +1,16 @@
 class PassengerInfoPage{
 
-    elements = () => {
-        nameInput: () => cy.get('#name_0');
-        surnameInput: () => cy.get('#first_surname_0');
+    elements =  {
+        nameInput: () => cy.get('#name_0'),
+        surnameInput: () => cy.get('#first_surname_0'),
 
-        contactName: () => cy.get('#register_name');
-        contactSurname: () => cy.get('#register_surname');
-        contactEmail: () => cy.get('#IBAIRP_CONTACT_FORM_EMAIL');
-        contactRepeatEmail: () => cy.get('#IBAIRP_CONTACT_FORM_REPEATED_EMAIL');
-        contactPhone: () => cy.get('#IBAIRP_CONTACT_FORM_PHONE');
-        contactCheckbox: () => cy.get('#bbki-passenger-info-passengers-contact-form > fieldset > fieldset > div > div > div > div.ib-box-separated__body > div > div.ib-check > label');
-        continueButton: () => cy.get('#AVAILABILITY_CONTINUE_BUTTON');
+        contactName: () => cy.get('#register_name'),
+        contactSurname: () => cy.get('#register_surname'),
+        contactEmail: () => cy.get('#IBAIRP_CONTACT_FORM_EMAIL'),
+        contactRepeatEmail: () => cy.get('#IBAIRP_CONTACT_FORM_REPEATED_EMAIL'),
+        contactPhone: () => cy.get('#IBAIRP_CONTACT_FORM_PHONE'),
+        contactCheckbox: () => cy.get('#bbki-passenger-info-passengers-contact-form > fieldset > fieldset > div > div > div > div.ib-box-separated__body > div > div.ib-check > label'),
+        continueButton: () => cy.get('#AVAILABILITY_CONTINUE_BUTTON')
 
     }
 

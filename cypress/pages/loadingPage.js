@@ -1,6 +1,6 @@
 class LoadingPage{
 
-    elements={
+    elements = {
         loadingCircle: () => cy.get('#bbki-loading-plane')
     }
 

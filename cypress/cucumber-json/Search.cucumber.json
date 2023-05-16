@@ -22,7 +22,7 @@
             "name": "I visit \"https://www.iberia.com/\"",
             "result": {
               "status": "failed",
-              "duration": 11433000000,
+              "duration": 377000000,
               "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.iberia.com/\n\nThe response we received from your web server was:\n\n  > 403: Forbidden\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (http://localhost:55910/__cypress/runner/cypress_runner.js:147661:84)\n    at visitFailedByErr (http://localhost:55910/__cypress/runner/cypress_runner.js:147069:12)\n    at <unknown> (http://localhost:55910/__cypress/runner/cypress_runner.js:147644:13)\nFrom previous event:\n    at visit (http://localhost:55910/__cypress/runner/cypress_runner.js:147642:17)\n    at Context.visit (http://localhost:55910/__cypress/runner/cypress_runner.js:147693:14)\n    at wrapped (http://localhost:55910/__cypress/runner/cypress_runner.js:160602:43)\nFrom Your Spec Code:\n    at Context.eval (cypress/integration/Search/search.spec.js:7:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             },
             "embeddings": [
